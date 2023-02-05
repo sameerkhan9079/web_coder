@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Web-Coder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                </li>
+
+
+                <!--  Drop Down Menu -->
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./frontend.html">Frontend Web Technologies</a>
+                        <a class="dropdown-item" href="./Backend.html">Backend Web Technologies </a>
+                        <div class="dropdown-divider"></div>
+                        <!-- <a class="dropdown-item" href="#">Tech Fun</a> -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./contact.html">Contact us</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">Signup</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Web Coder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an Web Coder Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">
+                What is Backend Development?
+            </h1>
+            <p class="lead">
+                Front end development involves what a user sees on the screen when they open a specific URL owned by
+                you. Even in a completely static environment (with only HTML/CSS), when someone opens a website, some
+                server on the planet needs to respond to you with those HTML and CSS files.
+
+                That server is just a computer, just like the one you use yourself to browse the internet. But it has
+                been tuned for performance, and doesn't have unnecessary components like a mouse or keyboard attached.
+                And it sits with tons of other computers probably in a data warehouse.
+
+                Programming those computers in some special way is called back end development.
+                <br>
+                <br>
+                You may think that backend development is called what it is because it runs behind the user's back. A
+                visitor to your website never really "accesses" the back end completely. They just communicate with your
+                server, either directly through ports for very limited access (like transferring HTML/CSS files) or not
+                even that buried deep under CDNs or firewalls (like Cloudflare).
+
+                Now that we have a raw understanding of what back end development means, let's get into some real
+                questions.
+
+            </p>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">
+                Is front end programming knowledge required for the back end?
+
+            </h1>
+            <h5> TLDR; No.</h5>
+            <p class="lead">
+
+
+
+                Back end development, as mentioned above, involves the programming of a computer sitting probably on the
+                other side of the planet responsible for responding to what your users say from their own computers.
+
+                If you're a full-time backend developer, you do not really need to care about what goes on inside those
+                HTML, CSS and JavaScript files you send to the user's browser. Instead, you've to focus more on the
+                performance of the server, the server code, and throughput.
+
+            </p>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">
+
+                What goes into back end development?
+            </h1>
+
+            <p class="lead">
+                Well, going by the books, you may say that a person who codes an application that can respond to HTTP
+                requests is a back end developer.
+
+                But in reality, sometimes back end developers are able to do much more than just writing server scripts.
+                They have the knowledge to set up reverse proxy servers (NGiNX/HAProxy), enable compression and other
+                ways to speed up the site, and set up a production docker environment.
+                <br>
+
+                <strong> qualify as a back end developer, I'd say the bare minimum skills you need are:</strong>
+                <br>
+            <ol type='1'>
+                <li>
+                    Good knowledge about a programming language in which you can write HTTP servers. Examples: C#, Java,
+                    Node, PHP, Python, etc. (there are many!)</li>
+
+                <li>
+                    Manage to host using cPanel (traditional) or using bash terminal (cloud hosting/traditional)</li>
+                <li> Working with Version Control Systems (VCS) like git for managing and deploying builds</li>
+            </ol type='1'>
+            Just like every game comes with minimum and recommended specifications, for back end developers, my
+            recommend specifications would be (inclusive of the minimum skills):
+            <br>
+            <br>
+
+            <ol type='1'>
+                <li>NGiNX for static file assets and server management</li>
+
+                <li>Database Management skills (SQL/NoSQL)</li>
+                <li>Security of backend (Writing safe and robust code, running applications in docker containers with
+                    limited privileges, protection against DoS attacks)</li>
+                <li>Autoscaling/Load balancing</li>
+
+
+            </ol type='1'>
+            </p>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">
+                Learn a backend programming language
+                
+            </h1>
+
+            <p class="lead">
+               
+                When people learn by themselves, they usually do not have a team or anyone who can do front end
+                development. They're all on their own. So you'll often have to create webpages and servers all by
+                yourself, at least in the beginning.
+                <br>
+                <br>
+                Although there are a lot of choices for back end programming languages, and I cannot think of any
+                popular system language which doesn't support HTTP servers out of the box. The advantage of choosing
+                Node is that your front end JavaScript skills are transferrable to the back end.
+                <br>
+                Nonetheless, you can choose from a variety of languages like Java, C++, C#, Python, PHP, etc.
+                <br>
+                <br>
+                How do you pick one, you might ask. The answer is the same as it was in the front end development
+                article: you have gotta try everything initially and see which one clicks the best with you.
+                <br>
+                <br>
+                Node is easy as you might have already done JS programming for the front end. But if you're a Python or
+                Java developer, you might find those easy to pick up. It depends on your profession and taste
+                completely.
+                
+                
+                
+            </p>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">
+                
+                Learn about managing hosting
+            </h1>
+            
+            <p class="lead">
+                
+                Gone are the days when you'll have to manually purchase servers and set them up in your home, connect to your ISP, do all that stuff yourself. This is the era of cloud computing. Now, when hosting your website, you have mainly 2 options:
+                
+                <ol type='1'>
+                    
+                    <li>Going for managed hosting servers like HostGator or GoDaddy.</li>
+                    <li>Going for cloud hosting providers like GCP, AWS, or DigitalOcean.</li>
+                    </ol>
+                
+                
+                    What is the difference between the two? In both cases, the servers are owned and operated by the respective companies. But the major difference is that managed hosting is more GUI friendly, has a rich set of tools for seeing the filesystem, monitoring usage, managing your official domain emails, uploading/downloading files from your server, and so on. It's basically a setup for people with less technical skills.
+                    <br>
+                    <br>
+                    For that reason, I do not recommend managed sites like HostGator or GoDaddy for seasoned developers. Still, it might be a good platform to make mistakes and learn on, primarily because you usually have prepaid plans for them. You'll also have a nice UI for managing things, which doesn't allow you to accidentally shoot up your bills.
+                    <br>
+                    <br>
+But when you start picking up speed, I recommend that you switch to a cloud provider. This takes away all the nice tools from cPanel that you used to manage files and folders on servers. But at the same time, it will challenge you to level up your skills a lot.
+<br>
+<br>
+Today, a lot of cloud providers offer a decent free trial, too, so that you can actually try out their platform before going full in. I host my website for developers - codedamn - on DigitalOcean and find it to be at a sweet balance of site complexity and features.
+<br>
+<br>
+You can use this link to signup on DigitalOcean and get free $100 credits. DigitalOcean instances are as cheap as $5 a month, so you have a runway of about 20 months on that instance, great deal, huh?
+<br>
+<br>
+Anyway, you can choose any cloud provider. Then it's important to learn to manage the server using just the command line by ssh'ing into it.
+            </p>
+        </div>
+    </div>
+    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">
+
+                Learn about Version Control Systems
+            </h1>
+
+            <p class="lead">
+                
+                There are other solutions apart from Git for VCS. But Git is the most used and simplest to understand.
+                <br>
+                <br>
+                As an individual, you might not appreciate it right away. But you'll understand why it is so important the moment you start working either in a team on multiple features simultaneously in your project.
+                <br>
+                <br>
+                Git allows you to manage your workflow using commits and branches. Commits are like checkpoints in your codebase - the ones you can always revert to if you screw up.
+                <br>
+                <br>
+                Branches are like alternate realities of your project, where something completely different could happen. These alternate realities can be created from any point in time and can be merged back again at any time.
+                <br>
+                <br>
+                If those realities can be merged together with compatibility, then it's fine. But if there's a conflict (like if you're alive in one reality and dead in other), then you have to manually make a choice. Other changes can be merged automatically.
+                <br>
+                <br>
+                Git is super interesting, and once you get hang of it, you'll want to use it in every project. You get to keep a history of your work in an efficient manner (it compresses and stores only the difference between commits).
+                <br>
+                <br>
+                It also allows you to create online git repositories on sites like GitHub, which acts as a central source of truth for your website. Sites like GitHub can be configured with special webhooks that can actually update your website whenever you add a new checkpoint (a new commit) without you ever needing to manually go to the server and update it yourself.
+
+
+
+
+            </p>
+        </div>
+    </div>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper)  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
